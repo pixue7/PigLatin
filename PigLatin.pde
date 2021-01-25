@@ -1,6 +1,6 @@
 public void setup() 
 {
-  String[] lines = loadStrings("words.txt");
+  String[] lines = {"beast","dough","happy","question","star","three","eagle","try"};
   System.out.println("there are " + lines.length + " lines");
   for(int i = 0 ; i < lines.length; i++) 
   {
@@ -11,15 +11,20 @@ public void draw()
 {
   
 }
-public int findFirstVowel(String sWord)
-{
-  char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-  for(int i = 0; i < sWord.length(); i++){
-    for(char vow : vowels){
-      if(vow == sWord.charAt(i)){
-        return i;
-      }
-    }
+public int findFirstVowel(String word){
+  for(int i = 0; i < word.length(); i++){
+  if(word.charAt(i)== 'a'){
+  return i;
+  }
+  else if(word.charAt(i)== 'e'){
+  return i;
+  }
+  else if(word.charAt(i)== 'i'){
+  return i;
+  }
+  else if(word.charAt(i)== 'o'){
+  return i;
+  }
   }
   return -1;
 }
